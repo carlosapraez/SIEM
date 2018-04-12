@@ -1,0 +1,10 @@
+1ra Opcion
+
+pandoc test.html -o test.md
+Agregar la --parse-raw opción parecía no quitar las etiquetas HTML no equivalentes.
+pandoc test.html -o test.md --parse-raw
+
+2da Opcion
+
+pandoc -f html -t commonmark myfile.html> myfile.md
+pandoc -f html -t markdown myfile.html >myfile.md
